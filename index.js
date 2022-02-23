@@ -5,7 +5,7 @@ mongoose.connect(
 );
 const app = express();
 
-const Port = process.env.port || 5000;
+const Port = process.env.PORT || 5000;
 
 const connection = mongoose.connection;
 connection.once("open", () => {
